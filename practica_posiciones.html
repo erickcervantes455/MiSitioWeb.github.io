@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Posiciones CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="fondo.jpg" alt="Fondo">
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">pasatiempos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="Practica1.html">Práctica uno</a></li>
+                    <li><a href="Posiciones.HTML">Posiciones en HTML</a></li>
+                    <li><a href="MundoDigital.HTML">Mi mundo digital</a></li>
+                    <li><a href="practica_posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="comunidad.html">Comunidad Digital</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Tercer parcial</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="contenedor-practica">
+        <h1>Práctica: Propiedad Position en CSS</h1>
+        
+        <!-- Position Static -->
+        <section class="ejemplo">
+            <h2>1. Position: Static</h2>
+            <p>Es la posición por defecto. El elemento sigue el flujo normal del documento.</p>
+            <div class="caja-contenedor">
+                <div class="caja caja-static">Static</div>
+            </div>
+        </section>
+
+        <!-- Position Relative -->
+        <section class="ejemplo">
+            <h2>2. Position: Relative</h2>
+            <p>Se desplaza desde su posición original usando <code>top</code> y <code>left</code> sin afectar el resto de los elementos.</p>
+            <div class="caja-contenedor">
+                <div class="caja caja-relative">Relative</div>
+            </div>
+        </section>
+
+        <!-- Position Absolute -->
+        <section class="ejemplo">
+            <h2>3. Position: Absolute</h2>
+            <p>Se posiciona con respecto a su contenedor padre más cercano que tenga <code>position: relative</code>.</p>
+            <div class="caja-contenedor contenedor-relativo">
+                <div class="caja caja-absolute">Absolute</div>
+            </div>
+        </section>
+
+        <!-- Position Sticky -->
+        <section class="ejemplo">
+            <h2>4. Position: Sticky</h2>
+            <p>Se desplaza normalmente con el scroll hasta llegar a una posición fijada (ej. <code>top: 10px</code>), donde se fije temporalmente.</p>
+            <div class="caja caja-sticky">Sticky</div>
+        </section>
+
+        <!-- Position Fixed -->
+<section class="ejemplo">
+    <h2>5. Position: Fixed</h2>
+    <p>Este elemento se sale de este cuadro y se fija en la esquina inferior derecha de tu pantalla (mira la esquina abajo a la derecha de tu navegador).</p>
+    
+    <div class="caja-contenedor">
+        <p><em>(El elemento con position: fixed se despegó de esta caja y ahora flota en tu pantalla)</em></p>
+    </div>
+</section>
+
+<!-- Elemento que flota en la pantalla -->
+<div class="caja caja-fixed">
+    ¡Soy Fixed!
+</div>
+
+    <footer>
+        <img src="logo_ucol.png" alt="Logo Universidad de Colima">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en Internet</p>
+        </div>
+    </footer>
+</body>
+</html>
