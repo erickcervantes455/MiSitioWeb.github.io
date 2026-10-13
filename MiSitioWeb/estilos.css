@@ -1,0 +1,364 @@
+/* estilos generales*/
+body{
+    margin: 0;
+}
+/*estilos del encabezado*/
+header{
+    width: 100%;
+    height: 250px;
+}
+header img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+/*estilos del menu*/
+nav{
+    background-color: darkslategrey;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    position: relative;
+}
+nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+nav a:hover{
+    background-color: lightblue;
+}
+/*estilos del submenu*/
+nav li ul{
+    display: none;
+    position: absolute;
+    background-color: darkslategray;
+    min-width: 180px; 
+}
+nav li:hover ul {
+    display: block;
+}
+/*Estilos del pie de pagina*/
+footer{
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+footer img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+/*Estilos para el cuerpo de l apagina*/
+section{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-width: 350px;
+}
+.principal{
+    width: 70%;
+    background-color: rgb(90, 134, 134);
+    padding: 20px;
+    border: 2px solid darkseagreen;
+}
+.secundario{
+    width: 30%;
+    background-color: rgb(90, 134, 134);
+    padding: 20px;
+    border: 2px solid darkseagreen;
+}
+/* 
+   ESTILOS EXCLUSIVOS: MI MUNDO DIGITAL */
+
+/* Bloque contenedor de cada tema */
+.tema-digital {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Título de cada subtema */
+.tema-digital h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+/* Párrafos descriptivos */
+.tema-digital p {
+    margin-bottom: 12px;
+    color: #444444;
+}
+
+/* Imágenes dentro de los temas */
+.tema-digital img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces relacionados */
+.tema-digital a {
+    color: #116b47; /* Verde institucional */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tema-digital a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor y reproductor de videos */
+.contenedor-video {
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-video iframe {
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+/* Línea separadora entre temas */
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 30px 0;
+}
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS: PRÁCTICA DE POSICIONES
+   ========================================================================== */
+
+/* Contenedor principal de la página de práctica */
+.contenedor-practica {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contenedor-practica h1 {
+    text-align: center;
+    color: darkslategrey;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    border-bottom: 3px solid darkseagreen;
+    padding-bottom: 10px;
+}
+
+/* Tarjetas para cada sección de ejemplo */
+.ejemplo {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-left: 6px solid darkslategrey;
+}
+
+.ejemplo h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.ejemplo p {
+    color: #555555;
+    font-size: 0.98rem;
+    margin-bottom: 15px;
+}
+
+code {
+    background-color: #eef2f5;
+    color: #d63031;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* Contenedores delimitadores (líneas punteadas) */
+.caja-contenedor {
+    background-color: #f8fafc;
+    border: 2px dashed #b2bec3;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 140px;
+}
+
+/* Base común para las cajas de prueba */
+.caja {
+    width: 110px;
+    height: 110px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 0.95rem;
+}
+
+/* 1. Position Static */
+.caja-static {
+    background-color: #7f8c8d;
+    position: static;
+}
+
+/* 2. Position Relative */
+.caja-relative {
+    background-color: #e74c3c;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+/* 3. Position Absolute */
+.contenedor-relativo {
+    position: relative; /* Contenedor de referencia para la caja absolute */
+    height: 160px;
+}
+
+.caja-absolute {
+    background-color: #3498db;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* 4. Position Sticky */
+.caja-sticky {
+    background-color: #8e44ad;
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+    margin: 0 auto;
+}
+
+/* 5. Position Fixed (Botón flotante) */
+.caja-fixed {
+    background-color: #2ecc71;
+    color: #ffffff;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: auto;
+    height: auto;
+    padding: 14px 22px;
+    border-radius: 30px;
+    z-index: 9999;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.caja-fixed:hover {
+    transform: scale(1.05);
+}
+/* ==========================================================================
+   ESTILOS PARA LA PÁGINA COMUNIDAD DIGITAL (comunidad.html)
+   ========================================================================== */
+
+/* Estilos de la Tabla */
+.tabla-tecnologias {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabla-tecnologias th {
+    background-color: darkslategrey;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+.tabla-tecnologias td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333333;
+}
+
+/* Filas alternadas */
+.tabla-tecnologias tbody tr:nth-of-type(even) {
+    background-color: #f8fafc;
+}
+
+.tabla-tecnologias tbody tr:hover {
+    background-color: #eef5f5;
+}
+
+/* Estilos de la Lista de Definiciones (<dl>, <dt>, <dd>) */
+.lista-conceptos {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-left: 5px solid darkseagreen;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lista-conceptos dt {
+    font-weight: bold;
+    color: darkslategrey;
+    font-size: 1.05rem;
+    margin-top: 12px;
+}
+
+.lista-conceptos dt:first-child {
+    margin-top: 0;
+}
+
+.lista-conceptos dd {
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #444444;
+    line-height: 1.5;
+}
+
+/* Estilos del Contenedor de Video */
+.contenedor-video {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-video iframe {
+    border: none;
+    display: block;
+}
+
+.nota-adicional {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed darkseagreen;
+}
