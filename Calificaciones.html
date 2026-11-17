@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de evaluación de calificaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header><img src="fondo.jpg" alt="Banner del sitio"></header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="Practica1.html">Práctica uno</a></li>
+                    <li><a href="Posiciones.HTML">Posiciones en HTML</a></li>
+                    <li><a href="MundoDigital.HTML">Mi mundo digital</a></li>
+                    <li><a href="practica_posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="comunidad.html">Comunidad Digital</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Tercer parcial</a>
+                <ul>
+                    <li><a href="Temperaturas.html">Conversor de temperaturas</a></li>
+                    <li><a href="calificaciones.html">Sistema de calificaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+            <aside class="principal">
+                <h2>Sistema de evaluación de calificaciones</h2>
+
+                <label for="nombre">Nombre del estudiante:</label><br>
+                <input type="text" id="nombre" placeholder="Ingresa el nombre del alumno"><br><br>
+
+                <label for="calif1">Primera calificación:</label><br>
+                <input type="number" id="calif1" step="any" placeholder="0 a 10"><br><br>
+
+                <label for="calif2">Segunda calificación:</label><br>
+                <input type="number" id="calif2" step="any" placeholder="0 a 10"><br><br>
+
+                <label for="calif3">Tercera calificación:</label><br>
+                <input type="number" id="calif3" step="any" placeholder="0 a 10"><br><br>
+
+                <button id="btnCalcular" onclick="calcularPromedio()">Calcular promedio</button><br><br>
+
+                <div id="resultado"></div>
+            </aside>
+
+            <aside class="secundario">
+                <p>Ingresa el nombre del estudiante y sus tres calificaciones en una escala del 0 al 10 para obtener su promedio final y estado académico.</p>
+            </aside>
+        </section>
+
+    <footer>
+        <img src="Logo_ucol.png" alt="Logo Universidad de Colima">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en Internet</p>
+        </div>
+    </footer>
+
+    <script src="calificaciones.js"></script>
+</body>
+</html>
